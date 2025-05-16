@@ -1,6 +1,6 @@
-package ink.pmc.advkt.v2.text
+package plutoproject.adventurekt.text
 
-import ink.pmc.advkt.v2.util.Holder
+import plutoproject.adventurekt.util.Holder
 import net.kyori.adventure.text.Component
 
 interface ComponentActions {

@@ -1,14 +1,14 @@
-package ink.pmc.advkt.v2.text
+package plutoproject.adventurekt.text
 
-import ink.pmc.advkt.v2.text.style.ColorKt
-import ink.pmc.advkt.v2.text.style.DecorationStyle
-import ink.pmc.advkt.v2.text.style.GradientColorKt
-import ink.pmc.advkt.v2.text.style.GradientColorWithStyle
-import ink.pmc.advkt.v2.text.style.WithStyle
-import ink.pmc.advkt.v2.text.style.WithoutStyle
-import ink.pmc.advkt.v2.text.style.toShadowColor
-import ink.pmc.advkt.v2.text.style.toTextColor
-import ink.pmc.advkt.v2.util.Holder
+import plutoproject.adventurekt.text.style.ColorKt
+import plutoproject.adventurekt.text.style.DecorationStyle
+import plutoproject.adventurekt.text.style.GradientColorKt
+import plutoproject.adventurekt.text.style.GradientColorWithStyle
+import plutoproject.adventurekt.text.style.WithStyle
+import plutoproject.adventurekt.text.style.WithoutStyle
+import plutoproject.adventurekt.text.style.toShadowColor
+import plutoproject.adventurekt.text.style.toTextColor
+import plutoproject.adventurekt.util.Holder
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.JoinConfiguration
 import net.kyori.adventure.text.format.ShadowColor

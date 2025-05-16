@@ -1,7 +1,7 @@
-package ink.pmc.advkt.v2.text.style
+package plutoproject.adventurekt.text.style
 
-import ink.pmc.advkt.v2.text.ComponentKt
-import ink.pmc.advkt.v2.text.TextComponentKt
+import plutoproject.adventurekt.text.ComponentKt
+import plutoproject.adventurekt.text.TextComponentKt
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.ShadowColor
 import net.kyori.adventure.text.format.TextColor

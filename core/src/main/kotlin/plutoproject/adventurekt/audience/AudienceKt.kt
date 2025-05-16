@@ -1,7 +1,7 @@
-package ink.pmc.advkt.v2.audience
+package plutoproject.adventurekt.audience
 
-import ink.pmc.advkt.v2.component
-import ink.pmc.advkt.v2.text.ComponentKt
+import plutoproject.adventurekt.component
+import plutoproject.adventurekt.text.ComponentKt
 import net.kyori.adventure.audience.Audience
 
 fun Audience.send(content: ComponentKt.() -> Unit) {

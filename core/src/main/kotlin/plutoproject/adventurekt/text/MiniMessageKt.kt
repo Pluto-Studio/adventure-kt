@@ -1,6 +1,6 @@
-package ink.pmc.advkt.v2.text
+package plutoproject.adventurekt.text
 
-import ink.pmc.advkt.v2.component
+import plutoproject.adventurekt.component
 import net.kyori.adventure.pointer.Pointered
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage

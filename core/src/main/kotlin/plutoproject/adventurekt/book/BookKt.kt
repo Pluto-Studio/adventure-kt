@@ -1,7 +1,7 @@
-package ink.pmc.advkt.v2.book
+package plutoproject.adventurekt.book
 
-import ink.pmc.advkt.v2.component
-import ink.pmc.advkt.v2.text.ComponentKt
+import plutoproject.adventurekt.component
+import plutoproject.adventurekt.text.ComponentKt
 import net.kyori.adventure.inventory.Book
 import net.kyori.adventure.text.Component
 

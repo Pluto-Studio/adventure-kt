@@ -1,7 +1,7 @@
-package ink.pmc.advkt.v2.util
+package plutoproject.adventurekt.util
 
-import ink.pmc.advkt.v2.text.ComponentKt
-import ink.pmc.advkt.v2.text.cleanBuild
+import plutoproject.adventurekt.text.ComponentKt
+import plutoproject.adventurekt.text.cleanBuild
 import net.kyori.adventure.text.Component
 
 class Holder<T>(

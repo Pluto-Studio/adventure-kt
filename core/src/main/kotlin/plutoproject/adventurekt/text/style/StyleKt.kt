@@ -1,6 +1,6 @@
-package ink.pmc.advkt.v2.text.style
+package plutoproject.adventurekt.text.style
 
-import ink.pmc.advkt.v2.text.ComponentKt
+import plutoproject.adventurekt.text.ComponentKt
 import net.kyori.adventure.text.Component
 
 interface Style

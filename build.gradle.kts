@@ -6,8 +6,8 @@ allprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "java")
 
-    group = "ink.pmc"
-    version = "1.0-SNAPSHOT"
+    group = "plutoproject.adventurekt"
+    version = "2.0.0"
 
     repositories {
         mavenCentral()

@@ -1,4 +1,4 @@
-package ink.pmc.advkt.v2.extension
+package plutoproject.adventurekt.extension
 
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.TextReplacementConfig
