@@ -102,3 +102,59 @@ title {
     }
 }
 ```
+
+### full usage example
+Screenshot
+![](screenshots/example.png)
+Code
+```kotlin
+component {
+        miniMessage {
+            strict()
+            tags {
+                tag("aa", Tag.inserting(Component.text("aa")))
+            }
+            provide(MiniMessage.miniMessage()) // highest priority
+        }
+
+        actions {
+
+            newlineAction {
+                it.value = null // clear the original component
+            }
+
+        }
+
+        replacements {
+            override()
+            replacement {
+                once()
+                matchLiteral("fuck")
+                replace {
+                    space()
+                    text("****") with textRed and underlined
+                    space()
+                }
+            }
+        }
+
+        text { "supplier style" }
+        text { true }
+        text("aaa") with "#66ccff" and bold and strikethrough without italic and strikethrough
+        text("color showcase") with textRed with shadowDarkBlue
+        text("bedrock colors") with textMaterialGold
+
+        text("this is a super looooooooooooooooooooooong text to test gradient") with textGradient(red, green, yellow, darkPurple)
+
+        // use component default mini message
+        mini("<blue><bold>no extra data mini message")
+
+        // use default mini message with custom placeholder and other things
+        mini("<red> example, <name>, <events>") {
+            unparsedPlaceholder("name", "DeeChael")
+            componentPlaceholder("events") {
+                text("No events here!")
+            }
+        }
+    }
+```
