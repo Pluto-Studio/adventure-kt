@@ -10,15 +10,15 @@
 
 ⛏️ (Probably) Full Kotlin support for [Kyori Adventure](https://github.com/KyoriPowered/adventure).
 
-## 🤔 purpose
+## 🤔 Goal
 
 Since Kotlin brought us the ability to create [Extensions](https://kotlinlang.org/docs/extensions.html), we can create DSLs.
 
 This project aimed to create many DSL utilities for adventure's builder pattern API, which make your life easier.
 
-## 📦 artifacts
+## 📦 Artifacts
 
-###  repository
+###  Repository
 
 ```kotlin
 repositories {
@@ -26,7 +26,7 @@ repositories {
 }
 ```
 
-### dependency
+### Dependency
 
 ```kotlin
 dependencies {
@@ -39,9 +39,9 @@ tasks.shadowJar {
 }
 ```
 
-## ☕ usage
+## ☕ Usage
 
-### creating a component
+### Creating a component
 
 ```kotlin
 component {
@@ -54,7 +54,7 @@ component {
 }
 ```
 
-### apply style
+### Apply style
 ```kotlin
 component {
     // style 1
@@ -65,9 +65,12 @@ component {
 }
 ```
 
-### actions override
+### Actions override
+
 You can override some actions for better usage.  
+
 For example, to make use of newline component to create a list of components instead of use linebreak
+
 ```kotlin
 fun lore(content: ComponentKt.() -> Unit): ItemLore {
     val components = mutableListOf<Component>()
@@ -84,7 +87,7 @@ fun lore(content: ComponentKt.() -> Unit): ItemLore {
 }
 ```
 
-### creating a title (WIP for v2)
+### Creating a title (WIP for v2)
 
 ```kotlin
 title {
@@ -103,10 +106,14 @@ title {
 }
 ```
 
-### full usage example
-Screenshot
+### Full usage example
+
+#### Screenshot
+
 ![](screenshots/example.png)
-Code
+
+#### Code
+
 ```kotlin
 component {
         miniMessage {
