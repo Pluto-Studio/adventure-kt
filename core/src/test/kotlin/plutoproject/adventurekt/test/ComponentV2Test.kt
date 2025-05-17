@@ -31,9 +31,13 @@ import plutoproject.adventurekt.text.unparsedPlaceholder
 import plutoproject.adventurekt.text.with
 import plutoproject.adventurekt.text.without
 import net.kyori.adventure.audience.Audience
+import net.kyori.adventure.key.Key
 import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.event.DataComponentValue
 import net.kyori.adventure.text.minimessage.MiniMessage
 import net.kyori.adventure.text.minimessage.tag.Tag
+import plutoproject.adventurekt.text.style.data
+import plutoproject.adventurekt.text.style.showItem
 
 class ComponentV2Test {
 
@@ -68,7 +72,9 @@ class ComponentV2Test {
                 }
             }
 
-            text { "supplier style" }
+            text { "supplier style" } with showItem(Key.key("minecraft:diamond"), 1) {
+                data(Key.key("minecraft:enchantments"), DataComponentValue.removed())
+            }
             text { true }
             text("aaa") with "#66ccff" and bold and strikethrough without italic and strikethrough
             text("color showcase") with textRed with shadowDarkBlue
