@@ -6,6 +6,10 @@ kotlin {
     jvmToolchain(8)
 }
 
+java {
+    withSourcesJar()
+}
+
 publishing {
     repositories {
         maven {
@@ -22,6 +26,6 @@ publishing {
     }
 
     publications.create<MavenPublication>("maven") {
-        artifact(tasks.jar)
+        from(components["java"])
     }
 }
