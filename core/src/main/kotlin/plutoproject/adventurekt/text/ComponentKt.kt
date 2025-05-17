@@ -24,30 +24,6 @@ fun ComponentKt.text(value: () -> String): ComponentKt {
     return text(value())
 }
 
-fun ComponentKt.text(value: () -> Char): ComponentKt {
-    return text(value())
-}
-
-fun ComponentKt.text(value: () -> Int): ComponentKt {
-    return text(value())
-}
-
-fun ComponentKt.text(value: () -> Long): ComponentKt {
-    return text(value())
-}
-
-fun ComponentKt.text(value: () -> Float): ComponentKt {
-    return text(value())
-}
-
-fun ComponentKt.text(value: () -> Double): ComponentKt {
-    return text(value())
-}
-
-fun ComponentKt.text(value: () -> Boolean): ComponentKt {
-    return text(value())
-}
-
 fun ComponentKt.translatable(value: () -> String): ComponentKt {
     return translatable(value())
 }
