@@ -31,11 +31,11 @@ repositories {
 ```kotlin
 dependencies {
     // Use shadowJar to shade the artifact into your jar
-    api("ink.pmc.advkt:v2:1.0.0")
+    api("plutoproject.adventurekt:core:2.0.0")
 }
 
 tasks.shadowJar {
-    relocate("ink.pmc.advkt", "com.example.libs.advkt")
+    relocate("plutoproject.adventurekt", "com.example.libs.adventurekt")
 }
 ```
 
