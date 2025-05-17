@@ -69,6 +69,7 @@ class ComponentV2Test {
             }
 
             text { "supplier style" }
+            text { true }
             text("aaa") with "#66ccff" and bold and strikethrough without italic and strikethrough
             text("color showcase") with textRed with shadowDarkBlue
             text("bedrock colors") with textMaterialGold

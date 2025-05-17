@@ -20,8 +20,8 @@ interface ComponentKt
 interface WithTag : ComponentKt
 interface WithoutTag : ComponentKt
 
-fun ComponentKt.text(value: () -> String): ComponentKt {
-    return text(value())
+fun ComponentKt.text(value: () -> Any): ComponentKt {
+    return text(value().toString())
 }
 
 fun ComponentKt.translatable(value: () -> String): ComponentKt {
