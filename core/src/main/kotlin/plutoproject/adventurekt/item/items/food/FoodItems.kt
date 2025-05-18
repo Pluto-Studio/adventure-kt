@@ -1,0 +1,82 @@
+package plutoproject.adventurekt.item.items.food
+
+import net.kyori.adventure.key.Key
+import plutoproject.adventurekt.item.Item
+import plutoproject.adventurekt.item.Items
+
+val Items.Apple: Item
+    get() = Item(Key.key("minecraft:apple"))
+val Items.BakedPotato: Item
+    get() = Item(Key.key("minecraft:baked_potato"))
+val Items.Beef: Item
+    get() = Item(Key.key("minecraft:beef"))
+val Items.Beetroot: Item
+    get() = Item(Key.key("minecraft:beetroot"))
+val Items.BeetrootSoup: Item
+    get() = Item(Key.key("minecraft:beetroot_soup"))
+val Items.Bread: Item
+    get() = Item(Key.key("minecraft:bread"))
+val Items.Carrot: Item
+    get() = Item(Key.key("minecraft:carrot"))
+val Items.Chicken: Item
+    get() = Item(Key.key("minecraft:chicken"))
+val Items.ChorusFruit: Item
+    get() = Item(Key.key("minecraft:chorus_fruit"))
+val Items.Cod: Item
+    get() = Item(Key.key("minecraft:cod"))
+val Items.CookedBeef: Item
+    get() = Item(Key.key("minecraft:cooked_beef"))
+val Items.CookedChicken: Item
+    get() = Item(Key.key("minecraft:cooked_chicken"))
+val Items.CookedCod: Item
+    get() = Item(Key.key("minecraft:cooked_cod"))
+val Items.CookedMutton: Item
+    get() = Item(Key.key("minecraft:cooked_mutton"))
+val Items.CookedPorkchop: Item
+    get() = Item(Key.key("minecraft:cooked_porkchop"))
+val Items.CookedRabbit: Item
+    get() = Item(Key.key("minecraft:cooked_rabbit"))
+val Items.CookedSalmon: Item
+    get() = Item(Key.key("minecraft:cooked_salmon"))
+val Items.Cookie: Item
+    get() = Item(Key.key("minecraft:cookie"))
+val Items.GlowBerries: Item
+    get() = Item(Key.key("minecraft:glow_berries"))
+val Items.GoldenApple: Item
+    get() = Item(Key.key("minecraft:golden_apple"))
+val Items.GoldenCarrot: Item
+    get() = Item(Key.key("minecraft:golden_carrot"))
+val Items.HoneyBottle: Item
+    get() = Item(Key.key("minecraft:honey_bottle"))
+val Items.MelonSlice: Item
+    get() = Item(Key.key("minecraft:melon_slice"))
+val Items.MushroomStew: Item
+    get() = Item(Key.key("minecraft:mushroom_stew"))
+val Items.Mutton: Item
+    get() = Item(Key.key("minecraft:mutton"))
+val Items.PoisonousPotato: Item
+    get() = Item(Key.key("minecraft:poisonous_potato"))
+val Items.Porkchop: Item
+    get() = Item(Key.key("minecraft:porkchop"))
+val Items.Potato: Item
+    get() = Item(Key.key("minecraft:potato"))
+val Items.Pufferfish: Item
+    get() = Item(Key.key("minecraft:pufferfish"))
+val Items.PumpkinPie: Item
+    get() = Item(Key.key("minecraft:pumpkin_pie"))
+val Items.Rabbit: Item
+    get() = Item(Key.key("minecraft:rabbit"))
+val Items.RabbitStew: Item
+    get() = Item(Key.key("minecraft:rabbit_stew"))
+val Items.RottenFlesh: Item
+    get() = Item(Key.key("minecraft:rotten_flesh"))
+val Items.Salmon: Item
+    get() = Item(Key.key("minecraft:salmon"))
+val Items.SuspiciousStew: Item
+    get() = Item(Key.key("minecraft:suspicious_stew"))
+val Items.SweetBerries: Item
+    get() = Item(Key.key("minecraft:sweet_berries"))
+val Items.TropicalFish: Item
+    get() = Item(Key.key("minecraft:tropical_fish"))
+val Items.Wheat: Item
+    get() = Item(Key.key("minecraft:wheat"))

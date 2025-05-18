@@ -14,6 +14,7 @@ import net.kyori.adventure.text.JoinConfiguration
 import net.kyori.adventure.text.format.ShadowColor
 import net.kyori.adventure.text.format.TextColor
 import net.kyori.adventure.text.minimessage.MiniMessage
+import plutoproject.adventurekt.text.style.BothStyle
 
 interface ComponentKt
 
@@ -153,6 +154,11 @@ fun ComponentKt.joinConfiguration(builder: JoinConfiguration.Builder.() -> Unit)
 ///////////////////////////////////////////////////////////////////////////////////////////
 // STYLE 1 START
 ///////////////////////////////////////////////////////////////////////////////////////////
+
+infix fun ComponentKt.provide(style: BothStyle): ComponentKt {
+    (this as TextComponentKt).original = style.with(this, this.original)
+    return this
+}
 
 infix fun ComponentKt.with(style: WithStyle): WithTag {
     (this as TextComponentKt).original = style.with(this, this.original)

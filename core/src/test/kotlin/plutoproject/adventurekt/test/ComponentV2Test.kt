@@ -36,12 +36,34 @@ import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.event.DataComponentValue
 import net.kyori.adventure.text.minimessage.MiniMessage
 import net.kyori.adventure.text.minimessage.tag.Tag
+import plutoproject.adventurekt.item.Items
+import plutoproject.adventurekt.item.blocks.colorable.Bed
+import plutoproject.adventurekt.item.blocks.colorable.RedBed
+import plutoproject.adventurekt.item.items.colorable.Dye
+import plutoproject.adventurekt.item.items.colorable.OrangeDye
+import plutoproject.adventurekt.item.items.tool.DiamondPickaxe
+import plutoproject.adventurekt.text.newline
+import plutoproject.adventurekt.text.style.count
 import plutoproject.adventurekt.text.style.data
+import plutoproject.adventurekt.text.style.decoration
+import plutoproject.adventurekt.text.style.shadowColor
 import plutoproject.adventurekt.text.style.showItem
+import plutoproject.adventurekt.text.style.style
+import plutoproject.adventurekt.text.style.text
+import plutoproject.adventurekt.text.style.textColor
+import plutoproject.adventurekt.text.style.type
+import plutoproject.adventurekt.text.style.undecoration
 
 class ComponentV2Test {
 
     fun style1(audience: Audience) {
+        val generalStyle = style {
+            textColor("#66ccff")
+            shadowColor(green)
+            decoration(underlined)
+            undecoration(italic)
+        }
+
         component {
             miniMessage {
                 strict()
@@ -80,6 +102,8 @@ class ComponentV2Test {
             text("color showcase") with textRed with shadowDarkBlue
             text("bedrock colors") with textMaterialGold
 
+            text("better color usage") with red.text
+
             text("this is a super looooooooooooooooooooooong text to test gradient") with textGradient(red, green, yellow, darkPurple)
 
             // use component default mini message
@@ -93,6 +117,28 @@ class ComponentV2Test {
                 componentPlaceholder("events") {
                     text("No events here!")
                 }
+            }
+
+            text("text") provide generalStyle
+
+            newline()
+
+            // some hover showItem event showcase
+            text("normal item") with showItem {
+                type(Items.DiamondPickaxe)
+                count(2)
+            }
+
+            // colorable items
+            // new style
+            text("dye with") with showItem {
+                type(Items.Dye.orange)
+                type(Items.Bed.red) // replace orange dye with red bed
+            }
+            // old style
+            text("dye with") with showItem {
+                type(Items.OrangeDye)
+                type(Items.RedBed)
             }
         }
     }

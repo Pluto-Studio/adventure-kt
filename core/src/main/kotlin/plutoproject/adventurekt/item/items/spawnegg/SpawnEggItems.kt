@@ -1,0 +1,169 @@
+package plutoproject.adventurekt.item.items.spawnegg
+
+import net.kyori.adventure.key.Key
+import plutoproject.adventurekt.item.Item
+import plutoproject.adventurekt.item.Items
+
+
+val Items.AllaySpawnEgg: Item
+    get() = Item(Key.key("minecraft:allay_spawn_egg"))
+val Items.ArmadilloSpawnEgg: Item
+    get() = Item(Key.key("minecraft:armadillo_spawn_egg"))
+val Items.AxolotlSpawnEgg: Item
+    get() = Item(Key.key("minecraft:axolotl_spawn_egg"))
+val Items.BatSpawnEgg: Item
+    get() = Item(Key.key("minecraft:bat_spawn_egg"))
+val Items.BeeSpawnEgg: Item
+    get() = Item(Key.key("minecraft:bee_spawn_egg"))
+val Items.BlazeSpawnEgg: Item
+    get() = Item(Key.key("minecraft:blaze_spawn_egg"))
+val Items.BoggedSpawnEgg: Item
+    get() = Item(Key.key("minecraft:bogged_spawn_egg"))
+val Items.BreezeSpawnEgg: Item
+    get() = Item(Key.key("minecraft:breeze_spawn_egg"))
+val Items.CamelSpawnEgg: Item
+    get() = Item(Key.key("minecraft:camel_spawn_egg"))
+val Items.CatSpawnEgg: Item
+    get() = Item(Key.key("minecraft:cat_spawn_egg"))
+val Items.CaveSpiderSpawnEgg: Item
+    get() = Item(Key.key("minecraft:cave_spider_spawn_egg"))
+val Items.ChickenSpawnEgg: Item
+    get() = Item(Key.key("minecraft:chicken_spawn_egg"))
+val Items.CodSpawnEgg: Item
+    get() = Item(Key.key("minecraft:cod_spawn_egg"))
+val Items.CowSpawnEgg: Item
+    get() = Item(Key.key("minecraft:cow_spawn_egg"))
+val Items.CreakingSpawnEgg: Item
+    get() = Item(Key.key("minecraft:creaking_spawn_egg"))
+val Items.CreeperSpawnEgg: Item
+    get() = Item(Key.key("minecraft:creeper_spawn_egg"))
+val Items.DolphinSpawnEgg: Item
+    get() = Item(Key.key("minecraft:dolphin_spawn_egg"))
+val Items.DonkeySpawnEgg: Item
+    get() = Item(Key.key("minecraft:donkey_spawn_egg"))
+val Items.DrownedSpawnEgg: Item
+    get() = Item(Key.key("minecraft:drowned_spawn_egg"))
+val Items.ElderGuardianSpawnEgg: Item
+    get() = Item(Key.key("minecraft:elder_guardian_spawn_egg"))
+val Items.EnderDragonSpawnEgg: Item
+    get() = Item(Key.key("minecraft:ender_dragon_spawn_egg"))
+val Items.EndermanSpawnEgg: Item
+    get() = Item(Key.key("minecraft:enderman_spawn_egg"))
+val Items.EndermiteSpawnEgg: Item
+    get() = Item(Key.key("minecraft:endermite_spawn_egg"))
+val Items.EvokerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:evoker_spawn_egg"))
+val Items.FoxSpawnEgg: Item
+    get() = Item(Key.key("minecraft:fox_spawn_egg"))
+val Items.FrogSpawnEgg: Item
+    get() = Item(Key.key("minecraft:frog_spawn_egg"))
+val Items.GhastSpawnEgg: Item
+    get() = Item(Key.key("minecraft:ghast_spawn_egg"))
+val Items.GlowSquidSpawnEgg: Item
+    get() = Item(Key.key("minecraft:glow_squid_spawn_egg"))
+val Items.GoatSpawnEgg: Item
+    get() = Item(Key.key("minecraft:goat_spawn_egg"))
+val Items.GuardianSpawnEgg: Item
+    get() = Item(Key.key("minecraft:guardian_spawn_egg"))
+val Items.HoglinSpawnEgg: Item
+    get() = Item(Key.key("minecraft:hoglin_spawn_egg"))
+val Items.HorseSpawnEgg: Item
+    get() = Item(Key.key("minecraft:horse_spawn_egg"))
+val Items.HuskSpawnEgg: Item
+    get() = Item(Key.key("minecraft:husk_spawn_egg"))
+val Items.IronGolemSpawnEgg: Item
+    get() = Item(Key.key("minecraft:iron_golem_spawn_egg"))
+val Items.LlamaSpawnEgg: Item
+    get() = Item(Key.key("minecraft:llama_spawn_egg"))
+val Items.MagmaCubeSpawnEgg: Item
+    get() = Item(Key.key("minecraft:magma_cube_spawn_egg"))
+val Items.MooshroomSpawnEgg: Item
+    get() = Item(Key.key("minecraft:mooshroom_spawn_egg"))
+val Items.MuleSpawnEgg: Item
+    get() = Item(Key.key("minecraft:mule_spawn_egg"))
+val Items.OcelotSpawnEgg: Item
+    get() = Item(Key.key("minecraft:ocelot_spawn_egg"))
+val Items.PandaSpawnEgg: Item
+    get() = Item(Key.key("minecraft:panda_spawn_egg"))
+val Items.ParrotSpawnEgg: Item
+    get() = Item(Key.key("minecraft:parrot_spawn_egg"))
+val Items.PhantomSpawnEgg: Item
+    get() = Item(Key.key("minecraft:phantom_spawn_egg"))
+val Items.PigSpawnEgg: Item
+    get() = Item(Key.key("minecraft:pig_spawn_egg"))
+val Items.PiglinBruteSpawnEgg: Item
+    get() = Item(Key.key("minecraft:piglin_brute_spawn_egg"))
+val Items.PiglinSpawnEgg: Item
+    get() = Item(Key.key("minecraft:piglin_spawn_egg"))
+val Items.PillagerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:pillager_spawn_egg"))
+val Items.PolarBearSpawnEgg: Item
+    get() = Item(Key.key("minecraft:polar_bear_spawn_egg"))
+val Items.PufferfishSpawnEgg: Item
+    get() = Item(Key.key("minecraft:pufferfish_spawn_egg"))
+val Items.RabbitSpawnEgg: Item
+    get() = Item(Key.key("minecraft:rabbit_spawn_egg"))
+val Items.RavagerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:ravager_spawn_egg"))
+val Items.SalmonSpawnEgg: Item
+    get() = Item(Key.key("minecraft:salmon_spawn_egg"))
+val Items.SheepSpawnEgg: Item
+    get() = Item(Key.key("minecraft:sheep_spawn_egg"))
+val Items.ShulkerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:shulker_spawn_egg"))
+val Items.SilverfishSpawnEgg: Item
+    get() = Item(Key.key("minecraft:silverfish_spawn_egg"))
+val Items.SkeletonHorseSpawnEgg: Item
+    get() = Item(Key.key("minecraft:skeleton_horse_spawn_egg"))
+val Items.SkeletonSpawnEgg: Item
+    get() = Item(Key.key("minecraft:skeleton_spawn_egg"))
+val Items.SlimeSpawnEgg: Item
+    get() = Item(Key.key("minecraft:slime_spawn_egg"))
+val Items.SnifferSpawnEgg: Item
+    get() = Item(Key.key("minecraft:sniffer_spawn_egg"))
+val Items.SnowGolemSpawnEgg: Item
+    get() = Item(Key.key("minecraft:snow_golem_spawn_egg"))
+val Items.SpiderSpawnEgg: Item
+    get() = Item(Key.key("minecraft:spider_spawn_egg"))
+val Items.SquidSpawnEgg: Item
+    get() = Item(Key.key("minecraft:squid_spawn_egg"))
+val Items.StraySpawnEgg: Item
+    get() = Item(Key.key("minecraft:stray_spawn_egg"))
+val Items.StriderSpawnEgg: Item
+    get() = Item(Key.key("minecraft:strider_spawn_egg"))
+val Items.TadpoleSpawnEgg: Item
+    get() = Item(Key.key("minecraft:tadpole_spawn_egg"))
+val Items.TraderLlamaSpawnEgg: Item
+    get() = Item(Key.key("minecraft:trader_llama_spawn_egg"))
+val Items.TropicalFishSpawnEgg: Item
+    get() = Item(Key.key("minecraft:tropical_fish_spawn_egg"))
+val Items.TurtleSpawnEgg: Item
+    get() = Item(Key.key("minecraft:turtle_spawn_egg"))
+val Items.VexSpawnEgg: Item
+    get() = Item(Key.key("minecraft:vex_spawn_egg"))
+val Items.VillagerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:villager_spawn_egg"))
+val Items.VindicatorSpawnEgg: Item
+    get() = Item(Key.key("minecraft:vindicator_spawn_egg"))
+val Items.WanderingTraderSpawnEgg: Item
+    get() = Item(Key.key("minecraft:wandering_trader_spawn_egg"))
+val Items.WardenSpawnEgg: Item
+    get() = Item(Key.key("minecraft:warden_spawn_egg"))
+val Items.WitchSpawnEgg: Item
+    get() = Item(Key.key("minecraft:witch_spawn_egg"))
+val Items.WitherSkeletonSpawnEgg: Item
+    get() = Item(Key.key("minecraft:wither_skeleton_spawn_egg"))
+val Items.WitherSpawnEgg: Item
+    get() = Item(Key.key("minecraft:wither_spawn_egg"))
+val Items.WolfSpawnEgg: Item
+    get() = Item(Key.key("minecraft:wolf_spawn_egg"))
+val Items.ZoglinSpawnEgg: Item
+    get() = Item(Key.key("minecraft:zoglin_spawn_egg"))
+val Items.ZombieHorseSpawnEgg: Item
+    get() = Item(Key.key("minecraft:zombie_horse_spawn_egg"))
+val Items.ZombieSpawnEgg: Item
+    get() = Item(Key.key("minecraft:zombie_spawn_egg"))
+val Items.ZombieVillagerSpawnEgg: Item
+    get() = Item(Key.key("minecraft:zombie_villager_spawn_egg"))
+val Items.ZombifiedPiglinSpawnEgg: Item
+    get() = Item(Key.key("minecraft:zombified_piglin_spawn_egg"))

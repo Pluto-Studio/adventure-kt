@@ -31,7 +31,7 @@ repositories {
 ```kotlin
 dependencies {
     // Use shadowJar to shade the artifact into your jar
-    api("plutoproject.adventurekt:core:2.0.0")
+    api("plutoproject.adventurekt:core:2.1.0")
 }
 
 tasks.shadowJar {
@@ -62,6 +62,9 @@ component {
     // simply add text and shadow in front of colors to use color types in advkt v2
     text("text") with textRed and shadowBlack without italic and color // nothing changed at result because "without color" is the latest step
     text("text") with underlined and textAqua and runCommand("/say hello") // with "underlined" decoration, "aqua" text color and "run command" click event
+    
+    // in 2.1.0, adventure kt added a simplier usage for color
+    text("text") with red.text
 }
 ```
 

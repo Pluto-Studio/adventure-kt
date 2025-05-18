@@ -6,6 +6,9 @@ import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.event.DataComponentValue
 import net.kyori.adventure.text.event.HoverEvent
 import plutoproject.adventurekt.component
+import plutoproject.adventurekt.item.BlockItem
+import plutoproject.adventurekt.item.Item
+import plutoproject.adventurekt.item.Items
 import plutoproject.adventurekt.text.ComponentKt
 import java.util.UUID
 
@@ -25,6 +28,10 @@ fun showText(builder: ComponentKt.() -> Unit): WithStyle {
     return HoverEventWithStyle(HoverEvent.showText(component(builder)))
 }
 
+fun showItem(builder: ShowItemBuilder.() -> Unit): WithStyle {
+    return HoverEventWithStyle(HoverEvent.showItem(ShowItemBuilder().apply(builder).build()))
+}
+
 fun showItem(id: Keyed, count: Int, data: ShowItemBuilder.() -> Unit = {}): WithStyle {
     return HoverEventWithStyle(HoverEvent.showItem(ShowItemBuilder(id, count).apply(data).build()))
 }
@@ -38,8 +45,8 @@ fun showEntity(id: Keyed, uuid: UUID, name: (ComponentKt.() -> Unit)? = null): W
 }
 
 class ShowItemBuilder(
-    private val id: Keyed,
-    private val count: Int
+    internal var id: Keyed = Items.Air.id,
+    internal var count: Int = 1
 ) {
 
     internal val dataComponents: MutableMap<Key, DataComponentValue> = mutableMapOf()
@@ -48,6 +55,18 @@ class ShowItemBuilder(
         return HoverEvent.ShowItem.showItem(id, count, dataComponents.toMap())
     }
 
+}
+
+fun ShowItemBuilder.id(id: Keyed) {
+    this.id = id
+}
+
+fun ShowItemBuilder.type(item: Item) {
+    this.id = item.id
+}
+
+fun ShowItemBuilder.count(count: Int) {
+    this.count = count
 }
 
 fun ShowItemBuilder.data(key: Key, value: DataComponentValue) {

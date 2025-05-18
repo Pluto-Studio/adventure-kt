@@ -1,0 +1,134 @@
+package plutoproject.adventurekt.item.items
+
+import net.kyori.adventure.key.Key
+import plutoproject.adventurekt.item.Item
+import plutoproject.adventurekt.item.Items
+
+val Items.ArmadilloScute: Item
+    get() = Item(Key.key("minecraft:armadillo_scute"))
+val Items.ArmorStand: Item
+    get() = Item(Key.key("minecraft:armor_stand"))
+val Items.BlazePowder: Item
+    get() = Item(Key.key("minecraft:blaze_powder"))
+val Items.BlazeRod: Item
+    get() = Item(Key.key("minecraft:blaze_rod"))
+val Items.Bone: Item
+    get() = Item(Key.key("minecraft:bone"))
+val Items.BoneMeal: Item
+    get() = Item(Key.key("minecraft:bone_meal"))
+val Items.Bowl: Item
+    get() = Item(Key.key("minecraft:bowl"))
+val Items.BreezeRod: Item
+    get() = Item(Key.key("minecraft:breeze_rod"))
+val Items.Brick: Item
+    get() = Item(Key.key("minecraft:brick"))
+val Items.Charcoal: Item
+    get() = Item(Key.key("minecraft:charcoal"))
+val Items.ClayBall: Item
+    get() = Item(Key.key("minecraft:clay_ball"))
+val Items.Clock: Item
+    get() = Item(Key.key("minecraft:clock"))
+val Items.CocoaBeans: Item
+    get() = Item(Key.key("minecraft:cocoa_beans"))
+val Items.Compass: Item
+    get() = Item(Key.key("minecraft:compass"))
+val Items.DiscFragment5: Item
+    get() = Item(Key.key("minecraft:disc_fragment_5"))
+val Items.DragonBreath: Item
+    get() = Item(Key.key("minecraft:dragon_breath"))
+val Items.DriedKelp: Item
+    get() = Item(Key.key("minecraft:dried_kelp"))
+val Items.EchoShard: Item
+    get() = Item(Key.key("minecraft:echo_shard"))
+val Items.EnchantedGoldenApple: Item
+    get() = Item(Key.key("minecraft:enchanted_golden_apple"))
+val Items.EndCrystal: Item
+    get() = Item(Key.key("minecraft:end_crystal"))
+val Items.EnderEye: Item
+    get() = Item(Key.key("minecraft:ender_eye"))
+val Items.Feather: Item
+    get() = Item(Key.key("minecraft:feather"))
+val Items.FermentedSpiderEye: Item
+    get() = Item(Key.key("minecraft:fermented_spider_eye"))
+val Items.FilledMap: Item
+    get() = Item(Key.key("minecraft:filled_map"))
+val Items.FireCharge: Item
+    get() = Item(Key.key("minecraft:fire_charge"))
+val Items.FireworkRocket: Item
+    get() = Item(Key.key("minecraft:firework_rocket"))
+val Items.FireworkStar: Item
+    get() = Item(Key.key("minecraft:firework_star"))
+val Items.GhastTear: Item
+    get() = Item(Key.key("minecraft:ghast_tear"))
+val Items.GlassBottle: Item
+    get() = Item(Key.key("minecraft:glass_bottle"))
+val Items.GlowInkSac: Item
+    get() = Item(Key.key("minecraft:glow_ink_sac"))
+val Items.GlowItemFrame: Item
+    get() = Item(Key.key("minecraft:glow_item_frame"))
+val Items.GlowstoneDust: Item
+    get() = Item(Key.key("minecraft:glowstone_dust"))
+val Items.Gunpowder: Item
+    get() = Item(Key.key("minecraft:gunpowder"))
+val Items.HeartOfTheSea: Item
+    get() = Item(Key.key("minecraft:heart_of_the_sea"))
+val Items.Honeycomb: Item
+    get() = Item(Key.key("minecraft:honeycomb"))
+val Items.InkSac: Item
+    get() = Item(Key.key("minecraft:ink_sac"))
+val Items.ItemFrame: Item
+    get() = Item(Key.key("minecraft:item_frame"))
+val Items.Leather: Item
+    get() = Item(Key.key("minecraft:leather"))
+val Items.MagmaCream: Item
+    get() = Item(Key.key("minecraft:magma_cream"))
+val Items.Map: Item
+    get() = Item(Key.key("minecraft:map"))
+val Items.NautilusShell: Item
+    get() = Item(Key.key("minecraft:nautilus_shell"))
+val Items.NetherBrick: Item
+    get() = Item(Key.key("minecraft:nether_brick"))
+val Items.NetherStar: Item
+    get() = Item(Key.key("minecraft:nether_star"))
+val Items.NetherWart: Item
+    get() = Item(Key.key("minecraft:nether_wart"))
+val Items.OminousTrialKey: Item
+    get() = Item(Key.key("minecraft:ominous_trial_key"))
+val Items.Painting: Item
+    get() = Item(Key.key("minecraft:painting"))
+val Items.Paper: Item
+    get() = Item(Key.key("minecraft:paper"))
+val Items.PhantomMembrane: Item
+    get() = Item(Key.key("minecraft:phantom_membrane"))
+val Items.PoppedChorusFruit: Item
+    get() = Item(Key.key("minecraft:popped_chorus_fruit"))
+val Items.PrismarineCrystals: Item
+    get() = Item(Key.key("minecraft:prismarine_crystals"))
+val Items.PrismarineShard: Item
+    get() = Item(Key.key("minecraft:prismarine_shard"))
+val Items.RabbitFoot: Item
+    get() = Item(Key.key("minecraft:rabbit_foot"))
+val Items.RabbitHide: Item
+    get() = Item(Key.key("minecraft:rabbit_hide"))
+val Items.RecoveryCompass: Item
+    get() = Item(Key.key("minecraft:recovery_compass"))
+val Items.ResinBrick: Item
+    get() = Item(Key.key("minecraft:resin_brick"))
+val Items.ShulkerShell: Item
+    get() = Item(Key.key("minecraft:shulker_shell"))
+val Items.SlimeBall: Item
+    get() = Item(Key.key("minecraft:slime_ball"))
+val Items.SpiderEye: Item
+    get() = Item(Key.key("minecraft:spider_eye"))
+val Items.Stick: Item
+    get() = Item(Key.key("minecraft:stick"))
+val Items.String: Item
+    get() = Item(Key.key("minecraft:string"))
+val Items.Sugar: Item
+    get() = Item(Key.key("minecraft:sugar"))
+val Items.TotemOfUndying: Item
+    get() = Item(Key.key("minecraft:totem_of_undying"))
+val Items.TrialKey: Item
+    get() = Item(Key.key("minecraft:trial_key"))
+val Items.TurtleScute: Item
+    get() = Item(Key.key("minecraft:turtle_scute"))

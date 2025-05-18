@@ -17,6 +17,11 @@ data class GradientColorKt(
     val colors: List<ColorKt>
 )
 
+val ColorKt.text: WithStyle
+    get() = ColorWithStyle(this.toTextColor())
+val ColorKt.shadow: WithStyle
+    get() = ShadowWithStyle(this.toShadowColor())
+
 /////////////////////////////////////////////////////////////////////////////////////
 // COLOR START
 /////////////////////////////////////////////////////////////////////////////////////
