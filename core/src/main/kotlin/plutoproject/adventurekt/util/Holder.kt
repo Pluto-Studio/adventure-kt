@@ -9,11 +9,13 @@ class Holder<T>(
     var value: T?
 ) {
 
-    internal var cleanBuilt: Boolean = false
+    internal var cleanBuilt: Component? = null
 
 }
 
 fun <T> Holder<T>.cleanBuild(): Component {
-    this.cleanBuilt = true
-    return this.container.cleanBuild()
+    if (this.cleanBuilt == null) {
+        this.cleanBuilt = this.container.cleanBuild()
+    }
+    return this.cleanBuilt!!
 }

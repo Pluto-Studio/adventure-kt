@@ -36,6 +36,8 @@ import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.event.DataComponentValue
 import net.kyori.adventure.text.minimessage.MiniMessage
 import net.kyori.adventure.text.minimessage.tag.Tag
+import net.kyori.adventure.text.serializer.gson.GsonComponentSerializer
+import plutoproject.adventurekt.componentList
 import plutoproject.adventurekt.item.Items
 import plutoproject.adventurekt.item.blocks.colorable.Bed
 import plutoproject.adventurekt.item.blocks.colorable.RedBed
@@ -53,6 +55,22 @@ import plutoproject.adventurekt.text.style.text
 import plutoproject.adventurekt.text.style.textColor
 import plutoproject.adventurekt.text.style.type
 import plutoproject.adventurekt.text.style.undecoration
+
+fun main() {
+    val generalStyle = style {
+        textColor("#66ccff")
+        shadowColor(green)
+        decoration(underlined)
+        undecoration(italic)
+    }
+    val components: List<Component> = componentList {
+        text("test result") provide generalStyle
+        newline()
+        text("second line") provide generalStyle
+    }
+
+    println(components.map { GsonComponentSerializer.gson().serialize(it) }.toList())
+}
 
 class ComponentV2Test {
 

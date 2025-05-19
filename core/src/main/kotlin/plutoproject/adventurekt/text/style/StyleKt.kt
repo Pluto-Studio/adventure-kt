@@ -21,16 +21,11 @@ interface WithoutStyle {
 
 }
 
-interface BothStyle : WithStyle, WithoutStyle {
+interface BothStyle : WithStyle, WithoutStyle
 
-    override fun with(holder: ComponentKt, original: Component): Component {
-        return original
-    }
+interface ApplyStyle {
 
-    override fun without(holder: ComponentKt, original: Component): Component {
-        return original
-    }
-    fun apply(holder: ComponentKt, original: Component): Component {
+    fun provide(holder: ComponentKt, original: Component): Component {
         return original
     }
 
@@ -40,7 +35,7 @@ class StyleBuilder {
 
     internal val style: KStyle.Builder = KStyle.style()
 
-    internal fun build(): BothStyle {
+    internal fun build(): ApplyStyle {
         return FullStyle(this.style.build())
     }
 
@@ -102,7 +97,7 @@ fun StyleBuilder.undecoration(decoration: TextDecoration) {
     this.style.decoration(decoration, false)
 }
 
-fun style(builder: StyleBuilder.() -> Unit): BothStyle {
+fun style(builder: StyleBuilder.() -> Unit): ApplyStyle {
     return StyleBuilder().apply(builder).build()
 }
 
@@ -110,9 +105,9 @@ fun style(builder: StyleBuilder.() -> Unit): BothStyle {
 // PRIVATE
 /////////////////////////////////////////////////////////////////////////////////////
 
-internal class FullStyle(val style: KStyle): BothStyle {
+internal class FullStyle(val style: KStyle): ApplyStyle {
 
-    override fun apply(holder: ComponentKt, original: Component): Component {
+    override fun provide(holder: ComponentKt, original: Component): Component {
         return original.style(this.style)
     }
 

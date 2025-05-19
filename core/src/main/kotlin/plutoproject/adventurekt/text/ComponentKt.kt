@@ -14,6 +14,7 @@ import net.kyori.adventure.text.JoinConfiguration
 import net.kyori.adventure.text.format.ShadowColor
 import net.kyori.adventure.text.format.TextColor
 import net.kyori.adventure.text.minimessage.MiniMessage
+import plutoproject.adventurekt.text.style.ApplyStyle
 import plutoproject.adventurekt.text.style.BothStyle
 
 interface ComponentKt
@@ -100,7 +101,7 @@ fun ComponentKt.raw(value: Component): ComponentKt {
 fun ComponentKt.empty() {
     val holder = Holder<Component>(this, Component.empty())
     ((this as TextComponentKt).actions as ComponentActionsImpl).emptyAction(holder)
-    if (holder.value != null && !holder.cleanBuilt) {
+    if (holder.value != null && holder.cleanBuilt == null) {
         this.children.add(TextComponentKt(holder.value!!))
     }
 }
@@ -108,7 +109,7 @@ fun ComponentKt.empty() {
 fun ComponentKt.space() {
     val holder = Holder<Component>(this, Component.space())
     ((this as TextComponentKt).actions as ComponentActionsImpl).spaceAction(holder)
-    if (holder.value != null && !holder.cleanBuilt) {
+    if (holder.value != null && holder.cleanBuilt == null) {
         this.children.add(TextComponentKt(holder.value!!))
     }
 }
@@ -116,7 +117,7 @@ fun ComponentKt.space() {
 fun ComponentKt.newline() {
     val holder = Holder<Component>(this, Component.newline())
     ((this as TextComponentKt).actions as ComponentActionsImpl).newlineAction(holder)
-    if (holder.value != null && !holder.cleanBuilt) {
+    if (holder.value != null && holder.cleanBuilt == null) {
         this.children.add(TextComponentKt(holder.value!!))
     }
 }
@@ -155,8 +156,8 @@ fun ComponentKt.joinConfiguration(builder: JoinConfiguration.Builder.() -> Unit)
 // STYLE 1 START
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-infix fun ComponentKt.provide(style: BothStyle): ComponentKt {
-    (this as TextComponentKt).original = style.with(this, this.original)
+infix fun ComponentKt.provide(style: ApplyStyle): ComponentKt {
+    (this as TextComponentKt).original = style.provide(this, this.original)
     return this
 }
 
@@ -325,10 +326,10 @@ internal fun ComponentKt.build(): Component {
 
 internal fun ComponentKt.cleanBuild(): Component {
     if ((this as TextComponentKt).joinConfiguration == null) {
-        val builder = Component.empty().toBuilder()
-        builder.append(this.original)
+        var builder = Component.empty().toBuilder()
+        builder = builder.append(this.original)
         for (child in this.children) {
-            builder.append((child as TextComponentKt).build())
+            builder = builder.append((child as TextComponentKt).build())
         }
         this.original = Component.empty()
         this.children.clear()
