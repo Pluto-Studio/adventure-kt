@@ -31,7 +31,7 @@ repositories {
 ```kotlin
 dependencies {
     // Use shadowJar to shade the artifact into your jar
-    api("plutoproject.adventurekt:core:2.1.0")
+    api("plutoproject.adventurekt:core:2.1.1")
 }
 
 tasks.shadowJar {
