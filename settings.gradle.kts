@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "adventurekt"
 include("core")
+include("paper")
