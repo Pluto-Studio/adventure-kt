@@ -3,4 +3,6 @@ plugins {
 }
 rootProject.name = "adventurekt"
 include("core")
-include("paper")
+include("paper-bundle")
+include("paper-spacefree")
+include("velocity-bundle")

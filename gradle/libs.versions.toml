@@ -1,9 +1,11 @@
 [versions]
 adventrue = "4.23.0"
 paper = '1.21.6-R0.1-SNAPSHOT'
+velocity = "3.4.0-SNAPSHOT"
 
 [libraries]
 paper-api = { module = 'io.papermc.paper:paper-api', version.ref = 'paper' }
+velocity-api = { module = "com.velocitypowered:velocity-api", version.ref = 'velocity' }
 
 adventure-api = { group = "net.kyori", name = "adventure-api", version.ref = "adventrue" }
 adventure-text-minimessage = { group = "net.kyori", name = "adventure-text-minimessage", version.ref = "adventrue" }
